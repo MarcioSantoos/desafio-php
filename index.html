@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidopi</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body class="imagem">
+  
+  <main>
+    <div class="paises-bar">
+      <label for="paises">Selecione o país:</label>
+      <select name="paises" id="paises" onselect="buscarDadosApi()" onchange="saveDate(this.value)">
+        <option value=""></option>
+        <option value="Brazil">Brasil</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option>
+      </select>
+      
+    </div>
+    <div class="tabela-dados">
+      <table id="table">
+      </table> 
+    </div>
+  </main>
+  <footer>
+      <p id="acesso"></p>
+      <p id="pais"></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
